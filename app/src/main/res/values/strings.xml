@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EdunomicsProject_1</string>
+    <string name="todo">TODO</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_details">Product Details</string>
+    <string name="product">Product</string>
+    <string name="add_product">Add Product</string>
+</resources>

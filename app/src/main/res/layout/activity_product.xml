@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-4dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/product_image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/drop_here"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp" />
+
+
+            <EditText
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/card_bulleted"
+                android:drawablePadding="7dp"
+                android:hint="@string/product"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/product_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/alphabetical_variant"
+                android:drawablePadding="7dp"
+                android:hint="@string/product_details"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/currency_inr"
+                android:drawablePadding="7dp"
+                android:hint="@string/product_price"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add_product_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="100dp"
+                android:text="@string/add_product"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
